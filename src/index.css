@@ -126,21 +126,25 @@ h1 {
   display: grid;
   grid-template-columns: auto auto;
 }
-.registration-2comp div:nth-child(odd) {
+.registration-3comp {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+/* .registration-2comp div:nth-child(odd) {
   margin-right: 5px;
 }
 .registration-2comp div:nth-child(even) {
   margin-left: 5px;
-}
-.registration-1comp {
-}
+} */
+
 .warning-view {
   background-color: #fee715ff;
   padding: 5px 10px;
   position: absolute;
   border-radius: 5px;
-  margin-top: -37px;
+  margin-top: -95px;
   right: 0;
+  margin-right: 25px;
   z-index: 5;
 }
 .warning-view::after {
@@ -153,4 +157,62 @@ h1 {
   position: absolute;
   margin-left: -25px;
   z-index: -1;
+}
+.form__div div label {
+  color: rgb(196, 196, 196);
+  font-family: 'BPG Nino Mkhedruli', sans-serif;
+}
+
+.form__div div input {
+  color: rgb(196, 196, 196);
+  font-family: 'BPG Nino Mkhedruli', sans-serif;
+  width: 100%;
+}
+.registration-1comp .form__div div input {
+  width: 450px;
+}
+.registration-2comp .form__div div input {
+  width: 200px;
+}
+/* .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  border: rgb(44, 44, 44) solid 1px;
+} */
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root
+  .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(44, 44, 44) !important;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: var(--first-color) !important;
+}
+.css-1kty9di-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: var(--first-color) !important;
+}
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  background: rgb(29, 29, 29);
+  color: rgb(196, 196, 196);
+}
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+  color: rgb(196, 196, 196);
+  font-family: 'BPG Nino Mkhedruli', sans-serif;
+  width: 200px;
+}
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  max-height: 200px !important;
+}
+.registration-3comp div div {
+  width: 150px;
+}
+.registration-3comp div svg {
+  fill: rgb(196, 196, 196);
+}
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper::-webkit-scrollbar {
+  width: 5px;
+}
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper::-webkit-scrollbar-track {
+  background: rgb(29, 29, 29);
+}
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper::-webkit-scrollbar-thumb {
+  background: var(--first-color);
 }
